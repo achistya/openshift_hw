@@ -21,7 +21,7 @@ podTemplate(
 
     // Checkout Source Code.
     stage('Checkout Source') {
-      checkout scm
+      git 'https://github.com/achistya/openshift_hw.git'
     }
 
     // Build the Tasks Service
