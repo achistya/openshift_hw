@@ -18,6 +18,8 @@ podTemplate(
     def devTag      = "0.0-0"
     def prodTag     = "0.0"
     def version     = "0.0"
+    def devProject  = "7f14-tasks-dev"
+    def prodProject = "7f14-tasks-prod"
     // Define Maven Command to point to the correct
     // settings for our Nexus installation
     def mvnCmd = "mvn -s ../nexus_settings.xml"
