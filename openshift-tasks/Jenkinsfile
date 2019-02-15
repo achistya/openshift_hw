@@ -176,7 +176,7 @@ podTemplate(
               echo "Active Application:      " + activeApp
               echo "Destination Application: " + destApp
 
-              openshift.set("env", "dc/${destApp}", "VERSION=${prodTag} (${destApp})")
+              openshift.set("env", "dc/${destApp}", "VERSION='${prodTag} (${destApp})'")
 
               // Update the Image on the Production Deployment Config
               def dc = openshift.selector("dc/${destApp}").object()
